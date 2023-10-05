@@ -1,4 +1,4 @@
-![dbms_2 2](https://github.com/gummadileepkumar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118707761/ccc26943-d7bc-4eb7-b87f-03ebc8a257ec)# EX 2 Data Manipulation Language (DML) Commands and built in functions in SQL
+# EX 2 Data Manipulation Language (DML) Commands and built in functions in SQL
 ## AIM:
 To create a manager database and execute DML queries using SQL.
 
