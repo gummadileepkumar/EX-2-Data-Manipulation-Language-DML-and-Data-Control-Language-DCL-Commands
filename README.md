@@ -47,61 +47,61 @@ delete from manager
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/028e9357-3b99-4586-820b-a22aa46ad884)
 
-### Q5)	List the names of Clerks from emp table.
+### Q4)	List the names of Clerks from emp table.
 ### QUERY:
 select ename from manager where designation='clerk';
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/f8673470-345f-4434-9bb6-89454b10b302)
 
-### Q6)	List the names of employee who are not Managers.
+### Q5)	List the names of employee who are not Managers.
 ### QUERY:
 select ename from manager where designation <> 'manager';
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/af076f12-2ca7-4b52-b78e-fb7c8386c928)
 
-### Q7)	List the names of employees not eligible for commission.
+### Q6)	List the names of employees not eligible for commission.
 ### QUERY:
 select ename from manager where commission=0;
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/e6607d0d-2495-4ccd-8249-c5ceb400f3e4)
 
-### Q8)	List employees whose name either start or end with ‘s’.
+### Q7)	List employees whose name either start or end with ‘s’.
 ### QUERY:
 select ename from manager where ename like '%s' or ename like 's%';
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/c655969e-f890-4273-ac2e-aa10d27dd6f5)
 
-### Q9) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
+### Q8) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
 ### QUERY:
  select ename,designation as "job",deptno,hiredate from manager order by hiredate asc;
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/7f97057e-e030-49fd-a886-5b11b510edfe)
 
-### Q10) List the Details of Employees who have joined before 30 Sept 8.
+### Q9) List the Details of Employees who have joined before 30 Sept 8.
 ### QUERY:
 select * from manager where hiredate<to_date('1981-09-30','YYYY-MM-DD');
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/2a1465fe-c2e5-4c01-8702-58f9095fcf8f)
 
-### Q11)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
+### Q10)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
 ### QUERY:
 select ename,deptno,salary from manager order by deptno asc,salary desc;
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/8a00fbd9-46a1-462e-9039-463193c8efbc)
 
-### Q12) List the names of employees not belonging to dept no 30,40 & 10
+### Q11) List the names of employees not belonging to dept no 30,40 & 10
 ### QUERY:
 select ename from manager where deptno not in (30,40,10);
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/3afd2ad6-229f-4b20-9659-7eb45b3393d6)
 
-### Q13) Find number of rows in the table EMP
+### Q12) Find number of rows in the table EMP
 ### QUERY:
 select count(*) from manager;
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/bc7ea0f4-3802-429d-9f96-83e60cf1c3fd)
 
-### Q14) Find maximum, minimum and average salary in EMP table.
+### Q13) Find maximum, minimum and average salary in EMP table.
 ### QUERY:
 select max(salary) from manager;
 select min(salary) from manager;
@@ -109,7 +109,7 @@ select avg(salary) from manager;
 ### OUTPUT:
 ![image](https://github.com/Priya-Loganathan/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/121166075/368b0c3f-2575-41a6-b733-bc73fc7f2f15)
 
-### Q15) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
+### Q14) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
 ### QUERY:
  SELECT designation AS job, COUNT(*) AS num_employees FROM manager GROUP BY designation ORDER BY num_employees DESC;
 ### OUTPUT:
