@@ -146,3 +146,6 @@ select avg(salary) from manager;
 
 ![dbms_2 14](https://github.com/gummadileepkumar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118707761/793906b9-8689-4f36-b65e-b6b810a26012)
 
+## RESULT:
+Thus, Manager database is created and DML queries such as insertion, updation, deletion are executed using SQL.
+
